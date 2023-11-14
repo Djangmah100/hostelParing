@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.dashboard_wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    gap: 1rem;
+}
+
+.sidebar {
+    width:250px;
+    height: 100vh;
+    background-color: #00DFC0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sidebarContent {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.sidebarContent {
+    width: 100px;
+    height: 100px;
+    border-radius:9px;
+    background: linear-gradient(to bottom, #40E9CB, #94D9F7);
+    padding: .5rem;
+    cursor: pointer;
+}
+
+.sidebarContent img {
+    width: 100%;
+}
+
+.sidebarNavigation ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.sidebarNavigation ul li {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: .4rem;
+    transition: all .5s;
+    padding: .5rem;
+    color: white;
+    font-weight: 500;
+    width: 100%;
+}
+
+.sidebarNavigation ul li:hover {
+    background-color: white;
+    width: 100%;
+    border-radius: 8px;
+    color: #00DFC0;
+}
+
+.sidebarNavigation ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+.dashboard-content {
+    padding: 1.5rem;
+    position: relative;
+    width: 100%;
+}
+
+.profileContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: .5rem;
+    width: 100%;
+    position: relative;
+}
+
+.profileImage {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #00DFC0;
+    cursor: pointer;
+}
+
+.profileImage img {
+    width: 100%;
+}
+
+.dashboardHeading {
+    width: 100%;
+    background-color: #00DFC0;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    margin-block: 1rem;
+}
+
+.dashboardSummary {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.financialCard {
+    width: 200px;
+    height: 200px;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-block-start: 2rem;
+    border: 2px solid #00DFC0;
+}
+.logout, button{
+    border-radius: 5px  ;
+    padding: 8px;
+    background-color: #00DFC0;
+    font-weight: bolder;
+    color: white;
+    
+}
+.dahsboardHeadingTop .p{
+    color: white;
+    font-size: large;
+}
+
+.dahsboardHeadingTop .h3{
+    color: white;
+    font-weight: bolder;
+}

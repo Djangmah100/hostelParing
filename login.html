@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <script src="main.js" defer></script>
+    <title>Hostel Pairing</title>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="form-container">
+            <div class="form-image">
+                <img src="assets/login.jpeg" alt="login picture">
+            </div>
+            <form method="post" action="{% url 'login' %}">
+                {%csrf_token%}
+                <div class="inputLable">
+                    <label for="id_student_id">Enter student ID</label>
+                    <input type="text" value="" name="student_id" maxlength="10" required id= "id_student_id"  placeholder="enter your student id">
+                </div>
+                <div class="inputLable">
+                    <label for="id_password">Enter student password</label>
+                    <input type="password" value="" name="password"  required id="id_password" placeholder="enter your password">
+
+                </div>
+                
+                
+                <button type="submit" class="btn">Login</button>
+
+            </form>
+        </div>        
+    </div>
+    
+</body>
+</html>
